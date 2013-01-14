@@ -26,7 +26,7 @@ done
 for FILE in *_3338.*
 do
  echo "moving $FILE file..."
- mv $FILE /Volumes/Avalon/Mercator/Cartography/Handbooks/Anchorage_Denali_01/data/shp/anchorage-osm/
+ mv $FILE /path/to/folder/
  
 done
 
