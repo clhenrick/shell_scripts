@@ -18,6 +18,7 @@ LAT_MAX=49.2
 LON_MAX=66.3
 
 # set variables for -s_srs and -t_srs here
+# note: EPSG codes do not need to be surrounded by double quotes
 S_SRS='EPSG:4326'    #data's source coordinate system / projection
 T_SRS='EPSG:3395'    #data's target coordinate system / projection
 
