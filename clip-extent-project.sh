@@ -1,9 +1,6 @@
 # this script clips all data in a directory to a bounding box coordinates, projects clipped data to a desired SRS,
 # moves processed data to a new location, and removes unprojected clipped data.
 # I find this useful for cartography when working with Natural Earth Data, see http://www.naturalearthdata.com/
-# *************************************************************
-
-# step 1: clip all shapefiles to specified lat lon bounding coordinates (x min y min x max y max)
 # note: data must be in WGS84, if in a different projection use that SRS' coordinate values 
 # *************************************************************
 
@@ -25,9 +22,11 @@ T_SRS='EPSG:3395'    #data's target coordinate system / projection
 # set path for output .shp files here
 DIR_OUT=/Users/chrishenrick/temp/test
 
-# variable values for sed here:
+# variable values for sed string replacement here:
 PRJ=`echo $T_SRS | sed s/\"//g | cut -f2 -d ':'`
 
+# step 1: clip all shapefiles to specified lat lon bounding coordinates (x min y min x max y max)
+# *************************************************************
 for FILE in *.shp
 do
  echo "Clipping $FILE file..."
