@@ -7,6 +7,8 @@
 # note: data must be in WGS84, if in a different projection use that SRS' coordinate values 
 # *************************************************************
 
+#!/bin/bash
+
 # set variables for bounding box coordinates here
 # minimum latitude  (min y value)
 LAT_MIN=8
