@@ -3,11 +3,11 @@
 # I find this useful for cartography when working with Natural Earth Data, see http://www.naturalearthdata.com/
 # *************************************************************
 
+#!/bin/bash
+
 # step 1: clip all shapefiles to specified lat lon bounding coordinates (x min y min x max y max)
 # note: data must be in WGS84, if in a different projection use that SRS' coordinate values 
 # *************************************************************
-
-#!/bin/bash
 
 # set variables for bounding box coordinates here
 # minimum latitude  (min y value)
