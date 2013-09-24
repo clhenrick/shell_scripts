@@ -5,30 +5,30 @@
 
 #!/bin/bash
 
-# step 1: clip all shapefiles to specified lat lon bounding coordinates (x min y min x max y max)
-# note: data must be in WGS84, if in a different projection use that SRS' coordinate values 
-# *************************************************************
-
-# set variables for bounding box coordinates here
+# set variables for bounding box coordinates here -74.701348 41.656843 -72.898654 40.295932
 # minimum latitude  (min y value)
-LAT_MIN=8
+LAT_MIN=40.295932
 # minimum longitude ( min x value)
-LON_MIN=-24.7
+LON_MIN=-74.701348
 # maximum latitude  (max y value)
-LAT_MAX=49.2
-# maximum longitdue (max x value)
-LON_MAX=66.3
+LAT_MAX=41.656843
+# maximum longitude (max x value)
+LON_MAX=-72.898654
 
 # set variables for -s_srs and -t_srs here
 # note: EPSG codes do not need to be surrounded by double quotes
 S_SRS='EPSG:4326'    #data's source coordinate system / projection
-T_SRS='EPSG:3395'    #data's target coordinate system / projection
+T_SRS='EPSG:32118'    #data's target coordinate system / projection
 
 # set path for output .shp files here
-DIR_OUT=/Users/chrishenrick/temp/test
+DIR_OUT='/Users/chrislhenrick/Cartography/projects/funStuff/nyc_data/data/shp/ocean'
 
 # variable values for sed here:
 PRJ=`echo $T_SRS | sed s/\"//g | cut -f2 -d ':'`
+
+# step 1: clip all shapefiles to specified lat lon bounding coordinates (x min y min x max y max)
+# note: data must be in WGS84, if in a different projection use that SRS' coordinate values 
+# *************************************************************
 
 for FILE in *.shp
 do

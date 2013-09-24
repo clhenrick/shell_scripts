@@ -4,7 +4,7 @@ do
  echo "Transforming $FILE file..."
  FILENEW=`echo $FILE | sed "s/.shp/_900913.shp/"`
  ogr2ogr \
- -f "ESRI Shapefile" -s_srs "EPSG:4326" -t_srs "EPSG:900913" \
+ -f "ESRI Shapefile" -t_srs "EPSG:900913" \
 $FILENEW  $FILE
 
 done
