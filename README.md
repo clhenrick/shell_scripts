@@ -48,6 +48,17 @@ This does xyz for abc.
 `./xxx_yyy.sh $ARGS`
 #### Sample Output
 `test`
+### geojson-to-shp.sh
+#### Description
+This script will export all .geojson files in a directory to .shp files in a specified subdirectory
+#### Supported Types
+`.geojson`
+#### Usage
+`cd` to the directory of `.geojson` files you want to convert
+
+`./$SCRIPTHOME/geojson-to-shp.sh`
+#### Sample Output
+Writes new files to a `data` subdirectory.
 ### get-extent.sh
 #### Description
 This does xyz for abc.
