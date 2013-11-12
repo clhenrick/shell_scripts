@@ -5,7 +5,8 @@
 NEWDIR=${2:-"$1/geojson"}
 for FILE in ${1:-}*.shp # cycles through all files in directory (case-sensitive!)
 do
-	if [wc -c $FILE > 30000000]
+	SIZE=$(wc -c $FILE)
+	if [$SIZE > 30000000]
 	then
 		echo "Skipping $FILE because it's pretty big and GitHub might complain!"
 		continue
