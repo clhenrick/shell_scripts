@@ -138,3 +138,13 @@ This does xyz for abc.
 `./xxx_yyy.sh $ARGS`
 #### Sample Output
 `test`
+### sshp-to-geojson.sh
+#### Description
+This converts all shapefiles in a directory `$DIR1` into geoJSON files in `$DIR2`.  If `$DIR1` is not specified, the script looks in the present working directory.  If `$DIR2` is not specificied, the script will place the new geoJSON files in a new subdirectory called `geojson`.
+#### Supported Types
+`.shp`
+#### Usage
+`./shp-to-geojson.sh $DIR1 $DIR2`
+#### Sample Output
+`converting file: /data/bike_lanes.shp...`
+
