@@ -4,6 +4,21 @@ shell_scripts
 bash shell scripts
 for batch geoprocessing spatial data using [OGR2OGR](http://www.gdal.org/ogr2ogr.html)
 
+## Requirements
+Install FWTools (I used the Linux 64-bit version which is [here](http://fwtools.maptools.org/linux-experimental.html).  
+
+Make sure ogr2ogr is working in command line with basic command: `ogr2ogr`
+
+I suppose you could just add the shell_scripts directory to your `PATH`, but I just run the commands with the full file path.
+
+## Reference Material
+These resources have helped me a lot in building the `ogr2ogr` batch commands:
+* [Directory of Spatial Reference Systems (SRS)](http://spatialreference.org/ref/)
+** FYI, GitHub currently likes (i.e., requires) `urn:ogc:def:crs:OGC:1.3:CRS84` for displaying geoJSON.
+* [List of OGR-supported Vector Formats](http://www.gdal.org/ogr/ogr_formats.html)...*so many options!*
+
+
+
 ## Scripts
 * [clip-extent-project.sh](#clip-extent-projectsh)
 * [clip-raster-to-shp.sh](#clip-raster-to-shpsh)
