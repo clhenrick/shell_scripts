@@ -3,7 +3,7 @@ shell_scripts
 
 Bash shell scripts primarily for batch geoprocessing spatial data using the OGR2OGR utility, a part of the Geospatial Data Abstract Library: [GDAL](http://www.gdal.org/ogr2ogr.html)
 
-There are a few other scripts in here for doing other useful things. 
+There are also a few scripts in here for doing other useful things such as a batch find and replace. 
 
 ## Requirements
 ####Mac OS X:
