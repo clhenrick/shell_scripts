@@ -30,8 +30,9 @@ These resources have helped me a lot in building the `ogr2ogr` batch commands:
 * [Directory of Spatial Reference Systems (SRS)](http://spatialreference.org/ref/)
 
 * FYI, GitHub currently likes (i.e., requires) `urn:ogc:def:crs:OGC:1.3:CRS84` for displaying geoJSON.
+
 * [List of OGR-supported Vector Formats](http://www.gdal.org/ogr/ogr_formats.html)...*so many options!*
-* 
+
 * This [Unix shell scripting tutorial](https://supportweb.cs.bham.ac.uk/documentation/tutorials/docsystem/build/tutorials/unixscripting/unixscripting.html)
 
 ##FAQ
