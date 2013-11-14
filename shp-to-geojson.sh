@@ -5,7 +5,7 @@
 NEWDIR=${2:-"$1/geojson"}
 for FILE in ${1:-}*.shp # cycles through all files in directory (case-sensitive!)
 do
-	SIZE=$(stat -c%s "$FILE")
+	SIZE=$(ls -al "$FILE" | awk '{print $5}')
 	echo "$SIZE bytes"
 	if [ "$SIZE" -gt "30000000" ]
 	then
