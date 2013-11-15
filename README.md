@@ -7,8 +7,8 @@ There are also a few scripts in here for doing other useful things such as a bat
 
 ## Requirements
 ####Mac OS X:
-Install GDAL Complete framework package via [King Chaos](http://www.kyngchaos.com/software/qgis)
-Be sure to follow the instructions for adding the path to your bash_profile or bashrc.
+Install GDAL Complete framework package via [King Chaos.](http://www.kyngchaos.com/software/qgis)
+Be sure to follow the instructions for appending the GDAL utilities' absolute path to the `PATH` variable in your `.bash_profile` or `.bashrc`.
 
 ####Linux:
 
