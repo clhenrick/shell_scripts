@@ -7,8 +7,8 @@ There are also a few scripts in here for doing other useful things such as a bat
 
 ## Requirements
 ####Mac OS X:
-Install GDAL Complete framework package via [King Chaos.](http://www.kyngchaos.com/software/qgis)
-Be sure to follow the instructions for appending the GDAL utilities' absolute path to the `PATH` variable in your `.bash_profile` or `.bashrc`.
+Install the GDAL Complete Framework package via [King Chaos.](http://www.kyngchaos.com/software/qgis)
+Be sure to follow the instructions for appending GDAL utilities' absolute path to the `PATH` variable in your `.bash_profile` or `.bashrc` in your home directory.
 
 ####Linux:
 
@@ -16,7 +16,7 @@ Install FWTools (I used the Linux 64-bit version which is [here](http://fwtools.
 
 ####Test:
 
-Make sure ogr2ogr is working in command line with basic command: `ogrinfo --version`
+Make sure `ogr2ogr` is working in Bash with basic command: `ogrinfo --version`
 
 You should get back something like:
 
