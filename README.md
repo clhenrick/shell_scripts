@@ -1,7 +1,7 @@
 shell_scripts
 =============
 
-Bash shell scripts primarily for batch geoprocessing spatial data using the OGR2OGR utility, a part of the Geospatial Data Abstract Library: [GDAL](http://www.gdal.org/ogr2ogr.html)
+Bash [shell scripts](http://en.wikipedia.org/wiki/Shell_script) primarily for batch geoprocessing spatial data using the OGR2OGR utility, a part of the Geospatial Data Abstract Library: [GDAL](http://www.gdal.org/ogr2ogr.html)
 
 There are also a few scripts in here for doing other useful things such as a batch find and replace. 
 
@@ -29,7 +29,7 @@ These resources have helped me a lot in building the `ogr2ogr` batch commands:
 
 * [Directory of Spatial Reference Systems (SRS)](http://spatialreference.org/ref/)
 
-* FYI, GitHub currently likes (i.e., requires) `urn:ogc:def:crs:OGC:1.3:CRS84` for displaying geoJSON.
+* FYI, GitHub currently likes (i.e., requires) data in the [CRS](http://en.wikipedia.org/wiki/Spatial_reference_system) `urn:ogc:def:crs:OGC:1.3:CRS84` / `EPSG:4326` for displaying geoJSON.
 
 * [List of OGR-supported Vector Formats](http://www.gdal.org/ogr/ogr_formats.html)...*so many options!*
 
