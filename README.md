@@ -12,7 +12,7 @@ Be sure to follow the instructions for appending GDAL utilities' absolute path t
 
 ####Linux:
 
-Install FWTools (I used the Linux 64-bit version which is [here](http://fwtools.maptools.org/linux-experimental.html).
+Install FWTools (the Linux 64-bit version which is [here](http://fwtools.maptools.org/linux-experimental.html)).
 
 ####Test:
 
