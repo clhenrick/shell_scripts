@@ -36,11 +36,11 @@ These resources have helped me a lot in building the `ogr2ogr` batch commands:
 * This [Unix shell scripting tutorial](https://supportweb.cs.bham.ac.uk/documentation/tutorials/docsystem/build/tutorials/unixscripting/unixscripting.html)
 
 ##FAQ
-The scripts I authored in this repository were written while working with Cartographic Design software that primarily uses the ESRI Shapefile format. Thus most of these scripts assume that is your data format unless otherwise specified. Use the `shp-to-geojson` and `geojson-to-shp` scripts to convert data between these two common data formats as needed.
+The scripts I authored in this repository were written while working with Cartographic Design software that primarily uses the ESRI Shapefile format. Thus most of these scripts assume that is your data format unless otherwise specified. Use the `shp-to-geojson` and `geojson-to-shp` scripts to convert data between the ESRI Shapefile and GeoJSON data formats as needed.
 
 Many of these scripts contain variables that must be edited to in order to change their paramaters. I plan on updating this in the future as I originally wrote these when first learning bash scripting and did not fully understand how to implement $ARGV when running a script. For now open the scripts with a text editor and change variables for things like output projection (eg: `$T_SRS`).
 
-You will have to set the executible permission for these scripts before you can run them. `cd` to the folder in which they live and `chmod +ux *` to make them executible.
+You will have to set the executible permission for these scripts before you can run them. First `cd` to the folder in which they live and do `chmod +ux *` to make them executible.
 
 ## Scripts
 * [clip-extent-project.sh](#clip-extent-projectsh)
