@@ -50,6 +50,7 @@ You will have to set the executible permission for these scripts before you can 
 * [get-extent.sh](#get-extentsh)
 * [gpx-to-shp.sh](#gpx-to-shpsh)
 * [grep-find-replace.sh](#grep-find-replacesh)
+* [make-hillshades.sh](#make-hillshades)
 * [merge.sh](#mergesh)
 * [project-google.sh](#project-googlesh)
 * [project-mercator.sh](#project-mercatorsh)
@@ -126,6 +127,26 @@ search through files in a directory and perform a find and replace.
 `./grep-find-replace.sh`
 #### Sample Output
 `test`
+
+### make-hillshades.sh
+#### Description
+Takes a Digital Elevation Model (DEM) raster and generates hillshades from 4 different light angles and a slope shade.These 5 files may then be composited in QGIS, TileMill, Photoshop, etc.  
+
+**Note:** Requires a `color-slope.txt` file containing the following: 
+
+```
+0 255 255 255
+90 0 0 0 
+```
+**Suggestion:** Process DEM prior to running this script (mosaic, clip, resample, reproject, etc)
+#### Supported Types
+all GDAL supported Raster files
+#### Usage
+`cd` to the folder containing the DEM  
+then do: `./make-hillshades.sh some-input-dem.flt`
+
+
+
 ### merge.sh
 #### Description
 merges a directory of shapefiles.
@@ -139,6 +160,7 @@ then do
 `./merge.sh`
 #### Sample Output
 `test`
+
 ### project-google.sh
 #### Description
 projects data to google web-mercator projection `EPSG:900913`
