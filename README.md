@@ -50,7 +50,7 @@ You will have to set the executible permission for these scripts before you can 
 * [get-extent.sh](#get-extentsh)
 * [gpx-to-shp.sh](#gpx-to-shpsh)
 * [grep-find-replace.sh](#grep-find-replacesh)
-* [make-hillshades.sh](#make-hillshades)
+* [make-hillshades.sh](#make-hillshadesh)
 * [merge.sh](#mergesh)
 * [project-google.sh](#project-googlesh)
 * [project-mercator.sh](#project-mercatorsh)
@@ -144,8 +144,6 @@ all GDAL supported Raster files
 #### Usage
 `cd` to the folder containing the DEM  
 then do: `./make-hillshades.sh some-input-dem.flt`
-
-
 
 ### merge.sh
 #### Description
