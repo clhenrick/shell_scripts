@@ -15,7 +15,7 @@ There are also a few scripts in here for doing other useful things such as a bat
 * [get-extent.sh](#get-extentsh)
 * [gpx-to-shp.sh](#gpx-to-shpsh)
 * [grep-find-replace.sh](#grep-find-replacesh)
-* [make-hillshades.sh](#make-hillshadesh)
+* [make-hillshades.sh](#make-hillshadessh)
 * [merge.sh](#mergesh)
 * [project-google.sh](#project-googlesh)
 * [project-mercator.sh](#project-mercatorsh)
