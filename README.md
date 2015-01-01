@@ -3,7 +3,7 @@ shell_scripts
 
 Bash [shell scripts](http://en.wikipedia.org/wiki/Shell_script) primarily for batch geoprocessing spatial data using the OGR2OGR utility, a part of the Geospatial Data Abstract Library: [GDAL.](http://www.gdal.org/ogr2ogr.html)  
 
-These scripts are useful when open-source GIS applications such as [QGIS](http://qgis.org/en/site/) do not allow for batch processing directories of spatial data. Additionally, invoking the scripts from a shell (such as the [Terminal.App](http://en.wikipedia.org/wiki/Terminal_%28OS_X%29) in Mac OSX) allows for heavy data processing to be run in the background while freeing up a GIS software to be used simultaneously for visualization and analysis.
+These scripts are useful when open-source GIS applications such as [QGIS](http://qgis.org/en/site/) do not allow for batch processing directories of vector spatial data. Additionally, invoking the scripts from a shell (such as the [Terminal.App](http://en.wikipedia.org/wiki/Terminal_%28OS_X%29) in Mac OSX) allows for heavy data processing to be run in the background while freeing up a GIS software to be used simultaneously for visualization and analysis.
 
 There are also a few scripts in here for doing other useful things such as a batch find and replace or renaming files to be database and GIS friendly. 
 
