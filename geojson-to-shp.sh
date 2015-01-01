@@ -2,12 +2,12 @@
 # ************************************************************************************************************
 #!/bin/bash
 
-NEWDIR="data/"
+NEWDIR="shp/"
 mkdir $NEWDIR # creates new subdirectory
 for FILE in *.geojson # cycles through all files in directory (case-sensitive!)
 do
 	echo "converting file: $FILE..."
-	FILENEW=`echo $FILE | sed "s/.geojson/_new.shp/"` # replaces old filename
+	FILENEW=`echo $FILE | sed "s/.geojson/.shp/"` # replaces old filename
 	ogr2ogr \
 	-f "ESRI Shapefile" \
 	$NEWDIR$FILENEW $FILE

@@ -5,8 +5,8 @@
 #!/bin/bash
 
 # script variables assigned as follows:
-OUTDR='/Users/chrishenrick/Projects/TAH_Phoenix_01/00_DATA/shp_gpx_processed/'  # ouput directory here
-TSRS='EPSG:2223'  # target CRS EPSG code here
+OUTDR='/Users/chrislhenrick/Cartography/projects/rHenrick/mike_pct_map/data/shp_gps_waypoint_data'  # ouput directory here
+TSRS='EPSG:4326'  # target CRS EPSG code here
 PRJ=`echo $TSRS | sed s/\"//g | cut -f2 -d ':'`   # variable values for sed here:
 
 # extract tracks and rename file

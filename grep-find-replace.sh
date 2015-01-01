@@ -5,11 +5,11 @@
 # uses a startdirectory parameter so that you can run it outside of specified directory - else this script will modify itself!
 # *****************************************************************************************
 
-!/bin/bash
+#!/bin/bash
 # **************** Change Variables Here ************
-startdirectory="~/temp/chrishenrick"
-searchterm="src="place-holder.png""
-replaceterm="src="images/place-holder.png""
+startdirectory='/Users/chrislhenrick/Cartography/projects/eHeinze/henry-cowell-sp/data/zz_tmp'
+searchterm='src="place-holder.png"'
+replaceterm='src="images/place-holder.png"'
 # **********************************************************
 
 echo "******************************************"

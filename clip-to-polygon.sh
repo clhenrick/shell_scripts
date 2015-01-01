@@ -4,10 +4,10 @@
 #!/bin/bash
 
 # assign variable values for OGR parameters here:
-CLIP='clip_bounds_polygon.shp' # the shapefile name of your clipping polygon
+CLIP='../shp_base_vector/00_clip_bounds.shp' # the shapefile name of your clipping polygon
 
 # set path for output.shp files here
-DIR_OUT='/Users/chrishenrick/Projects/some_project/'
+DIR_OUT='/Users/chrislhenrick/Cartography/projects/rHenrick/mike_pct_map/data/shp_base_vector/'
 
 for FILE in *.shp
 do

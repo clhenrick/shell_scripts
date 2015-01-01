@@ -6,12 +6,12 @@
 #!/bin/bash
 
 # assign variable values for OGR parameters here:
-ROADS='roads.shp' # the name of your OSM roads layer file, must have a type field name
+ROADS='roads.shp' # the name of your OSM roads layer file, must have a type field name and be named roads.shp
 TSRS='EPSG:2227'  # the EPSG code you want your data projected to
-PRJ=`echo $TSRS | sed s/\"//g | cut -f2 -d ':'` # takes the numbers of your EPSG code and appends to the output.shp name
+PRJ=`echo $TSRS | sed s/\"//g | cut -f2 -d ':'` # takes the numbers of your EPSG code and appends to the output file name
 
-# set path for output.shp files here
-DIR_OUT='/Users/chrislhenrick/Cartography/projects/eHeinze/00_DATA/shp_osm/roads_processed/'
+# set path for output files here
+DIR_OUT='/Users/chrislhenrick/Cartography/projects/eHeinze/henry-cowell-sp/data/roads/processed/'
 
 # queries out motorways
 for FILE in $ROADS

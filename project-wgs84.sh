@@ -1,4 +1,8 @@
 #!/bin/bash
+# reprojects a directory of .shp files to WGS84
+
+TSRS=$1 # data source's current CRS (may improve accuracy of OGR if specified)
+
 for FILE in *.shp
 do
  echo "Transforming $FILE file..."
@@ -8,6 +12,3 @@ do
 $FILENEW  $FILE
 
 done
-
-#note: change the -s_srs parameters to the projection of the data you're working with.
-#ex: 4326 = WGS84 and 900913 = Google Web Mercator
