@@ -1,7 +1,6 @@
 #!/bin/bash
 # Takes a Digital Elevation Model (DEM) and generates hillshades from 4 different light angles and a slope shade
 # These may then be composited in QGIS, TileMill, Photoshop, etc. 
-# Requires a color-slope.txt file containing the following: 0 255 255 255 \n 90 0 0 0
 # Note: Process DEM prior to running this script (mosaic, clip, resample, reproject, etc)
 
 GFLT=$1 #must be a raster DEM file type supported by GDAL
