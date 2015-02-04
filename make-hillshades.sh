@@ -22,5 +22,8 @@ gdaldem hillshade -of 'GTiff'  -z $Z -az 315 $GFLT hillshade_az315.tif
 echo "Generating Slope from $GFLT..."
 gdaldem slope $GFLT slope.tif
 
+echo "Making color-slope.txt..."
+touch color-slope.txt && printf '%s\n%s\n' '0 255 255 255' '90 0 0 0' >> color-slope.txt 
+
 echo "Creating slope shade..."
 gdaldem color-relief slope.tif color-slope.txt slopeshade.tif
